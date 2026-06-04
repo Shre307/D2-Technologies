@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D2 Technologies | IT Staffing & Recruitment Solutions</title>
+  <meta name="description" content="D2 Technologies provides IT staffing, recruitment, contract hiring, permanent hiring, executive search, and remote staffing solutions." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTczIDI2MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZm9udC1zaXplOiA1OHB4OwogICAgICB9CgogICAgICAuY2xzLTEsIC5jbHMtMiB7CiAgICAgICAgZm9udC1mYW1pbHk6IEFyaWFsLUJvbGRNVCwgQXJpYWw7CiAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBpc29sYXRpb246IGlzb2xhdGU7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy01IHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CgogICAgICAuY2xzLTYgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgICAgc3Ryb2tlOiAjZDhlNGYwOwogICAgICAgIHN0cm9rZS13aWR0aDogMS4ycHg7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogIzBkMjA0MDsKICAgICAgICBmb250LXNpemU6IDgxLjQ2cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNyB7CiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC0uMDdlbTsKICAgICAgfQoKICAgICAgLmNscy04IHsKICAgICAgICBsZXR0ZXItc3BhY2luZzogMGVtOwogICAgICB9CgogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50LTIpOwogICAgICAgIG9wYWNpdHk6IC45NTsKICAgICAgfQoKICAgICAgLmNscy05IHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9Ii0xMDEyLjYxIiB5MT0iNi41OSIgeDI9Ii0xMDExLjYxIiB5Mj0iNy41OSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgxNDk5MTEuMzEgLTkzNS4xNikgc2NhbGUoMTQ4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0MmE1ZjUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTU2NWMwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQtMiIgeDE9Ii0xMDA5LjU0IiB5MT0iNS4wMiIgeDI9Ii0xMDA4LjU0IiB5Mj0iNi4wMiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSg4NTQuNTEgMTI5MjkwLjg5KSByb3RhdGUoOTApIHNjYWxlKDEyOCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkNTRmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y1N2YxNyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy01IiB5PSI3LjgiIHdpZHRoPSI5NzMiIGhlaWdodD0iMjQ0LjM5Ii8+CiAgPHJlY3QgY2xhc3M9ImNscy05IiB4PSI0NSIgeT0iNDAiIHdpZHRoPSIxNDgiIGhlaWdodD0iMTQ4IiByeD0iMjgiIHJ5PSIyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjEgMjcuMjMpIHJvdGF0ZSgtMTIpIi8+CiAgPHJlY3QgY2xhc3M9ImNscy00IiB4PSI4MyIgeT0iNzAiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjIiIHJ5PSIyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYuMTUgMjYwLjkxKSByb3RhdGUoLTgyKSIvPgogIDxnIGNsYXNzPSJjbHMtMyI+CiAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk3IDE1My45OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5EMjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KICA8bGluZSBjbGFzcz0iY2xzLTYiIHgxPSIyNTEuNzUiIHkxPSI2MCIgeDI9IjI1MS43NSIgeTI9IjIwMCIvPgogIDxnIGNsYXNzPSJjbHMtMyI+CiAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3OS40MiAxNDkuNjEpIj48dHNwYW4geD0iMCIgeT0iMCI+RDIgPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxMjYuNzciIHk9IjAiPlQ8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTgiIHg9IjE3MC40OCIgeT0iMCI+ZWNobm9sb2dpZXM8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #1769C2;
+      --blue-dark: #0E3F78;
+      --navy: #0E1B2A;
+      --text: #243447;
+      --muted: #667085;
+      --light: #F6F9FC;
+      --border: #E5EAF0;
+      --orange: #F59E0B;
+      --white: #FFFFFF;
+      --shadow: 0 18px 45px rgba(16, 24, 40, 0.08);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--navy);
+      color: rgba(255,255,255,0.82);
+      font-size: 13px;
+      padding: 9px 0;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .topbar a {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(229,234,240,0.9);
+    }
+
+    .navbar {
+      height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.3px;
+    }
+
+    .brand-logo {
+      width: 218px;
+      height: auto;
+      display: block;
+    }
+
+    .footer-logo-wrap {
+      display: inline-flex;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 8px 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 14px 34px rgba(0,0,0,0.18);
+    }
+
+    .footer-logo {
+      width: 230px;
+      height: auto;
+      display: block;
+    }
+
+    .hero-logo-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .hero-logo-card img {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: 14px;
+      color: #405066;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta,
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--blue);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--blue);
+      box-shadow: 0 12px 28px rgba(23,105,194,0.22);
+      transition: 0.25s ease;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover,
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .nav-cta {
+      padding: 14px 26px;
+      font-size: 15.5px;
+      min-width: 122px;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: white;
+      color: var(--navy);
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: 0.25s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--navy);
+    }
+
+    .hero {
+      position: relative;
+      padding: 88px 0 72px;
+      background:
+        radial-gradient(circle at 85% 10%, rgba(23,105,194,0.13), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(23,105,194,0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23,105,194,0.045) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent 78%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: rgba(23,105,194,0.08);
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    h1 {
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1.04;
+      letter-spacing: -2.5px;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 38px;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 620px;
+    }
+
+    .trust-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 12px 28px rgba(16,24,40,0.04);
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .trust-item span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .hero-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      position: relative;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: rgba(245,158,11,0.15);
+      border-radius: 50%;
+      right: -35px;
+      top: -35px;
+    }
+
+    .mini-card {
+      position: relative;
+      background: var(--light);
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 18px;
+      border: 1px solid #eef2f7;
+    }
+
+    .mini-card h3 {
+      font-size: 20px;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .mini-card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .candidate-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .candidate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: white;
+    }
+
+    .candidate div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), #80B9F2);
+    }
+
+    .candidate strong {
+      display: block;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .candidate small {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .status {
+      color: #027A48;
+      background: #ECFDF3;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .section-head.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-kicker {
+      color: var(--orange);
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -1.4px;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .about-panel {
+      background: var(--navy);
+      border-radius: 30px;
+      padding: 36px;
+      color: white;
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-panel::after {
+      content: 'D2';
+      position: absolute;
+      right: -12px;
+      bottom: -36px;
+      color: rgba(255,255,255,0.05);
+      font-size: 180px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .about-panel h3 {
+      font-size: 30px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-panel p {
+      color: rgba(255,255,255,0.74);
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 12px 30px rgba(16,24,40,0.04);
+    }
+
+    .check-icon {
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(23,105,194,0.1);
+      color: var(--blue);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+    }
+
+    .check-item h4 {
+      color: var(--navy);
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .check-item p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .services {
+      background: var(--light);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 32px rgba(16,24,40,0.04);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(23,105,194,0.24);
+    }
+
+    .icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: rgba(23,105,194,0.09);
+      color: var(--blue);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14.5px;
+    }
+
+    .industries-list,
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .pill {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 11px 16px;
+      color: #344054;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 8px 20px rgba(16,24,40,0.035);
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .why-card {
+      padding: 30px;
+      border-radius: 26px;
+      border: 1px solid var(--border);
+      background: white;
+      box-shadow: 0 10px 30px rgba(16,24,40,0.04);
+    }
+
+    .why-card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-bottom: 18px;
+    }
+
+    .why-card ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .why-card li {
+      display: flex;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .why-card li::before {
+      content: '✓';
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .quote-card {
+      background: var(--navy);
+      color: white;
+      border-radius: 26px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quote-card::before {
+      content: '“';
+      position: absolute;
+      top: -26px;
+      right: 28px;
+      font-size: 130px;
+      color: rgba(255,255,255,0.08);
+      font-family: Georgia, serif;
+    }
+
+    .quote-card p {
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .quote-card strong {
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-section {
+      background: linear-gradient(180deg, #fff 0%, #F6F9FC 100%);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .contact-info {
+      background: var(--navy);
+      color: white;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info h3 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .contact-info p {
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 24px;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .info-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      color: rgba(255,255,255,0.86);
+    }
+
+    .info-item span:first-child {
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      background: rgba(255,255,255,0.1);
+      display: grid;
+      place-items: center;
+      flex: 0 0 38px;
+    }
+
+    .info-item a {
+      color: white;
+      font-weight: 600;
+    }
+
+    .form-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-card h3 {
+      color: var(--navy);
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      color: #344054;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #D8DEE8;
+      border-radius: 14px;
+      padding: 13px 14px;
+      font: inherit;
+      outline: none;
+      background: #fff;
+      color: var(--text);
+      transition: 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px rgba(23,105,194,0.08);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      border: 0;
+      margin-top: 4px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.25s ease;
+      font-size: 15px;
+    }
+
+    .submit-btn:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 48px 0 26px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+
+    footer p,
+    footer a {
+      color: rgba(255,255,255,0.68);
+      font-size: 14px;
+    }
+
+    footer h4 {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.11);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.58);
+      font-size: 13px;
+    }
+
+    .page-title {
+      padding: 72px 0 42px;
+      background: var(--light);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-title h1 {
+      font-size: clamp(34px, 4vw, 54px);
+      margin-bottom: 12px;
+    }
+
+    .page-title p {
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 17px;
+    }
+
+
+
+    .file-upload-box {
+      border: 1px dashed #B8C3D1;
+      border-radius: 16px;
+      padding: 18px;
+      background: #F9FBFD;
+      transition: 0.2s ease;
+    }
+
+    .file-upload-box:hover {
+      border-color: var(--blue);
+      background: rgba(23,105,194,0.04);
+    }
+
+    input[type="file"] {
+      padding: 12px;
+      background: transparent;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    .file-help {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid,
+      .about-grid,
+      .two-column,
+      .contact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-row {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        position: fixed;
+        top: 118px;
+        left: 20px;
+        right: 20px;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .topbar {
+        display: none;
+      }
+
+      .navbar {
+        height: 68px;
+      }
+
+      .brand-logo {
+        width: 170px;
+      }
+
+      .footer-logo {
+        width: 200px;
+      }
+
+      nav ul {
+        top: 82px;
+      }
+
+      .hero {
+        padding: 58px 0 54px;
+      }
+
+      h1 {
+        letter-spacing: -1.4px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .cards-grid,
+      .testimonial-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-secondary,
+      .nav-cta {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="D2 Technologies home">
+        <img class="brand-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTczIDI2MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZm9udC1zaXplOiA1OHB4OwogICAgICB9CgogICAgICAuY2xzLTEsIC5jbHMtMiB7CiAgICAgICAgZm9udC1mYW1pbHk6IEFyaWFsLUJvbGRNVCwgQXJpYWw7CiAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMywgLmNscy00IHsKICAgICAgICBpc29sYXRpb246IGlzb2xhdGU7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy01IHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CgogICAgICAuY2xzLTYgewogICAgICAgIGZpbGw6IG5vbmU7CiAgICAgICAgc3Ryb2tlOiAjZDhlNGYwOwogICAgICAgIHN0cm9rZS13aWR0aDogMS4ycHg7CiAgICAgIH0KCiAgICAgIC5jbHMtMiB7CiAgICAgICAgZmlsbDogIzBkMjA0MDsKICAgICAgICBmb250LXNpemU6IDgxLjQ2cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtNyB7CiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC0uMDdlbTsKICAgICAgfQoKICAgICAgLmNscy04IHsKICAgICAgICBsZXR0ZXItc3BhY2luZzogMGVtOwogICAgICB9CgogICAgICAuY2xzLTQgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50LTIpOwogICAgICAgIG9wYWNpdHk6IC45NTsKICAgICAgfQoKICAgICAgLmNscy05IHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9Ii0xMDEyLjYxIiB5MT0iNi41OSIgeDI9Ii0xMDExLjYxIiB5Mj0iNy41OSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgxNDk5MTEuMzEgLTkzNS4xNikgc2NhbGUoMTQ4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0MmE1ZjUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTU2NWMwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQtMiIgeDE9Ii0xMDA5LjU0IiB5MT0iNS4wMiIgeDI9Ii0xMDA4LjU0IiB5Mj0iNi4wMiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSg4NTQuNTEgMTI5MjkwLjg5KSByb3RhdGUoOTApIHNjYWxlKDEyOCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkNTRmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y1N2YxNyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy01IiB5PSI3LjgiIHdpZHRoPSI5NzMiIGhlaWdodD0iMjQ0LjM5Ii8+CiAgPHJlY3QgY2xhc3M9ImNscy05IiB4PSI0NSIgeT0iNDAiIHdpZHRoPSIxNDgiIGhlaWdodD0iMTQ4IiByeD0iMjgiIHJ5PSIyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxLjEgMjcuMjMpIHJvdGF0ZSgtMTIpIi8+CiAgPHJlY3QgY2xhc3M9ImNscy00IiB4PSI4MyIgeT0iNzAiIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjIiIHJ5PSIyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYuMTUgMjYwLjkxKSByb3RhdGUoLTgyKSIvPgogIDxnIGNsYXNzPSJjbHMtMyI+CiAgICA8dGV4dCBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk3IDE1My45OSkiPjx0c3BhbiB4PSIwIiB5PSIwIj5EMjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KICA8bGluZSBjbGFzcz0iY2xzLTYiIHgxPSIyNTEuNzUiIHkxPSI2MCIgeDI9IjI1MS43NSIgeTI9IjIwMCIvPgogIDxnIGNsYXNzPSJjbHMtMyI+CiAgICA8dGV4dCBjbGFzcz0iY2xzLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3OS40MiAxNDkuNjEpIj48dHNwYW4geD0iMCIgeT0iMCI+RDIgPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy03IiB4PSIxMjYuNzciIHk9IjAiPlQ8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTgiIHg9IjE3MC40OCIgeT0iMCI+ZWNobm9sb2dpZXM8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" alt="D2 Technologies logo">
+      </a>
+
+      <nav>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+        <ul id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Building high-performing teams through trusted recruitment.</h1>
+          <p>D2 Technologies helps organizations identify, attract, and retain top technology talent while supporting professionals in finding rewarding career opportunities.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#contact">Request Talent →</a>
+            <a class="btn-secondary" href="#services">Explore Services</a>
+          </div>
+          
+        </div>
+
+        <div class="hero-card" aria-label="Recruitment dashboard visual">
+          <div class="hero-logo-card">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgODAwIDI0NC4zOSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC4yNWVtOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIHN0cm9rZS13aWR0aDogMS4ycHg7CiAgICAgIH0KCiAgICAgIC5jbHMtMiwgLmNscy0zIHsKICAgICAgICBmaWxsOiBub25lOwogICAgICAgIHN0cm9rZTogI2Q4ZTRmMDsKICAgICAgfQoKICAgICAgLmNscy00IHsKICAgICAgICBsZXR0ZXItc3BhY2luZzogMGVtOwogICAgICB9CgogICAgICAuY2xzLTUgewogICAgICAgIGxldHRlci1zcGFjaW5nOiAuMjdlbTsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMGQyMDQwOwogICAgICAgIGZvbnQtZmFtaWx5OiBBcmlhbC1Cb2xkTVQsIEFyaWFsOwogICAgICAgIGZvbnQtc2l6ZTogNDhweDsKICAgICAgICBmb250LXdlaWdodDogNzAwOwogICAgICB9CgogICAgICAuY2xzLTYsIC5jbHMtNywgLmNscy04LCAuY2xzLTkgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLmNscy0xMCB7CiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC4xNmVtOwogICAgICB9CgogICAgICAuY2xzLTExLCAuY2xzLTcgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMTIgewogICAgICAgIGxldHRlci1zcGFjaW5nOiAtLjA4ZW07CiAgICAgIH0KCiAgICAgIC5jbHMtNyB7CiAgICAgICAgZm9udC1mYW1pbHk6IEFyaWFsLUJsYWNrLCBBcmlhbDsKICAgICAgICBmb250LXNpemU6IDU4cHg7CiAgICAgICAgZm9udC13ZWlnaHQ6IDgwMDsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBzdHJva2Utd2lkdGg6IC44cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtOCB7CiAgICAgICAgZmlsbDogIzhhYTBjMDsKICAgICAgICBmb250LWZhbWlseTogQXJpYWxNVCwgQXJpYWw7CiAgICAgICAgZm9udC1zaXplOiAxNXB4OwogICAgICB9CgogICAgICAuY2xzLTkgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50LTIpOwogICAgICAgIG9wYWNpdHk6IC45NTsKICAgICAgfQoKICAgICAgLmNscy0xMyB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSItNDU2LjUiIHkxPSI2NjAuMDQiIHgyPSItNDU1LjUiIHkyPSI2NTkuMDQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjc2NDEuODMgOTc3MTguODEpIHNjYWxlKDE0OCAtMTQ4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0MmE1ZjUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTU2NWMwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQtMiIgeDE9Ii00NTUuMDQiIHkxPSI2NjAuNzYiIHgyPSItNDU0LjA0IiB5Mj0iNjU5Ljc2IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC04NDMzMS40NCA1ODMwNi45MSkgcm90YXRlKDkwKSBzY2FsZSgxMjggLTEyOCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkNTRmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y1N2YxNyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xMSIgd2lkdGg9IjgwMCIgaGVpZ2h0PSIyNDQuMzkiLz4KICA8cmVjdCBjbGFzcz0iY2xzLTEzIiB4PSI4MCIgeT0iMzIuMTkiIHdpZHRoPSIxNDgiIGhlaWdodD0iMTQ4IiByeD0iMjgiIHJ5PSIyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4LjcxIDM0LjM0KSByb3RhdGUoLTEyKSIvPgogIDxyZWN0IGNsYXNzPSJjbHMtOSIgeD0iMTE4IiB5PSI2Mi4xOSIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyMiIgcnk9IjIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMS43IDI4OC44Nikgcm90YXRlKC04MikiLz4KICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMiAxNDYuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+RDI8L3RzcGFuPjwvdGV4dD4KICA8bGluZSBjbGFzcz0iY2xzLTIiIHgxPSIzMTAiIHkxPSI1Mi4xOSIgeDI9IjMxMCIgeTI9IjE5Mi4xOSIvPgogIDx0ZXh0IGNsYXNzPSJjbHMtNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzM4IDEzNC4xOSkiPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjAiIHk9IjAiPkQyIDwvdHNwYW4+PHRzcGFuIGNsYXNzPSJjbHMtMTIiIHg9IjczLjI2IiB5PSIwIj5UPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy00IiB4PSI5OC41MyIgeT0iMCI+ZWNobm9sb2dpZXM8L3RzcGFuPjwvdGV4dD4KICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIzMzgiIHkxPSIxNTIuMTkiIHgyPSI3NjAiIHkyPSIxNTIuMTkiLz4KICA8dGV4dCBjbGFzcz0iY2xzLTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMzOCAxNzcuMTkpIj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIwIiB5PSIwIj5QZW9wbGUgwrc8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTEiIHg9Ijg3Ljc5IiB5PSIwIj4gPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy0xMCIgeD0iOTUuNjgiIHk9IjAiPlQ8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTUiIHg9IjEwNy4xNyIgeT0iMCI+ZWNobm9sb2d5IMK3IENvbnN1bHRpbmc8L3RzcGFuPjwvdGV4dD4KPC9zdmc+" alt="D2 Technologies logo">
+          </div>
+          <div class="mini-card">
+            <h3>Talent matched to your business goals</h3>
+            <p>From software development to cloud, cybersecurity, ERP, data engineering and executive technology leadership.</p>
+          </div>
+          <div class="candidate-list">
+            <div class="candidate">
+              <div><div class="avatar"></div><div><strong>Cloud Engineer</strong><small>AWS · Kubernetes · DevOps</small></div></div>
+              <span class="status">Matched</span>
+            </div>
+            <div class="candidate">
+              <div><div class="avatar"></div><div><strong>Data Engineer</strong><small>SQL · BI · Warehousing</small></div></div>
+              <span class="status">Screened</span>
+            </div>
+            <div class="candidate">
+              <div><div class="avatar"></div><div><strong>Cybersecurity Analyst</strong><small>Security · IAM · Compliance</small></div></div>
+              <span class="status">Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div>
+            <div class="section-kicker">About Us</div>
+            <h3>Reliable staffing solutions for evolving technology demands.</h3>
+            <p>At D2 Technologies, our recruitment approach combines industry expertise, relationship-driven hiring, and a deep understanding of the modern technology workforce.</p>
+          </div>
+          <p>We work with startups, mid-sized businesses, and enterprise organizations across healthcare, finance, retail, logistics, telecommunications, and technology services.</p>
+        </div>
+
+        <div class="about-list">
+          <div class="check-item">
+            <div class="check-icon">✓</div>
+            <div><h4>Scalable Hiring Support</h4><p>Contract staffing, permanent hiring, contract-to-hire, remote staffing, executive search, and project-based resources.</p></div>
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div>
+            <div><h4>Technology-Focused Recruiting</h4><p>Recruitment support across software development, cloud, DevOps, data, cybersecurity, ERP, and enterprise applications.</p></div>
+          </div>
+          <div class="check-item">
+            <div class="check-icon">✓</div>
+            <div><h4>Client-Centric Process</h4><p>We understand business goals, technical needs, workforce strategy, and long-term hiring priorities before recommending talent.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Our Staffing Solutions</div>
+          <h2>Flexible recruitment solutions for growing teams.</h2>
+          <p>Whether you need short-term resources, long-term hires, remote professionals, or specialized project teams, we provide hiring models tailored to your goals.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card"><div class="icon-box">👥</div><h3>Contract Staffing</h3><p>Quickly scale your workforce with qualified contract professionals for short-term or long-term technology projects.</p></div>
+          <div class="card"><div class="icon-box">🎯</div><h3>Permanent Hiring</h3><p>Find full-time employees who align with your company culture, technical requirements, and long-term objectives.</p></div>
+          <div class="card"><div class="icon-box">🔄</div><h3>Contract-to-Hire</h3><p>Evaluate candidates on the job before making a permanent hiring decision.</p></div>
+          <div class="card"><div class="icon-box">🏢</div><h3>Executive Search</h3><p>Identify experienced technology leaders for strategic and senior-level positions.</p></div>
+          <div class="card"><div class="icon-box">🌍</div><h3>Offshore & Remote Staffing</h3><p>Access skilled remote professionals and global talent solutions to support business growth and flexibility.</p></div>
+          <div class="card"><div class="icon-box">🚀</div><h3>Project-Based Hiring</h3><p>Build specialized teams for software development, cloud migration, cybersecurity, ERP, data engineering, and digital transformation.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries">
+      <div class="container">
+        <div class="two-column">
+          <div>
+            <div class="section-head">
+              <div class="section-kicker">Industries We Serve</div>
+              <h2>Talent support across major business sectors.</h2>
+              <p>We support organizations across technology-driven industries where speed, accuracy, and quality hiring matter.</p>
+            </div>
+            <div class="industries-list">
+              <span class="pill">Information Technology</span>
+              <span class="pill">Healthcare IT</span>
+              <span class="pill">Financial Services</span>
+              <span class="pill">Telecommunications</span>
+              <span class="pill">Retail & E-Commerce</span>
+              <span class="pill">Government & Public Sector</span>
+              <span class="pill">Education Technology</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-head">
+              <div class="section-kicker">Technologies & Skill Areas</div>
+              <h2>We recruit for in-demand technology roles.</h2>
+              <p>From engineering teams to enterprise applications, we help clients find skilled professionals for niche and high-demand roles.</p>
+            </div>
+            <div class="skills-list">
+              <span class="pill">Java</span><span class="pill">.NET</span><span class="pill">Python</span><span class="pill">Node.js</span><span class="pill">React</span><span class="pill">Angular</span>
+              <span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">Google Cloud</span><span class="pill">Kubernetes</span><span class="pill">Docker</span><span class="pill">CI/CD</span>
+              <span class="pill">AI & Machine Learning</span><span class="pill">SQL Development</span><span class="pill">Data Warehousing</span><span class="pill">Cybersecurity</span><span class="pill">SAP</span><span class="pill">Salesforce</span><span class="pill">ServiceNow</span><span class="pill">Workday</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Why Choose Us</div>
+          <h2>What sets D2 Technologies apart.</h2>
+          <p>We combine fast turnaround, strong screening, and a relationship-first approach to simplify technology hiring.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card"><div class="icon-box">💡</div><h3>Industry-Focused Recruiting</h3><p>Our recruiters understand technology roles, market trends, and hiring challenges.</p></div>
+          <div class="card"><div class="icon-box">⚡</div><h3>Fast Turnaround</h3><p>We maintain a strong talent network that helps accelerate hiring timelines.</p></div>
+          <div class="card"><div class="icon-box">✅</div><h3>Quality Candidates</h3><p>Every candidate goes through detailed screening, technical evaluation, and background verification processes.</p></div>
+          <div class="card"><div class="icon-box">🤝</div><h3>Client-Centric Approach</h3><p>We build long-term partnerships by understanding business goals and workforce strategies.</p></div>
+          <div class="card"><div class="icon-box">🧩</div><h3>Flexible Engagement Models</h3><p>Customized staffing solutions designed to match hiring needs and budget.</p></div>
+          <div class="card"><div class="icon-box">📈</div><h3>Business Growth Support</h3><p>We help businesses reduce hiring time, access talent, and improve workforce scalability.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-column">
+        <div class="why-card">
+          <h3>For Employers</h3>
+          <ul>
+            <li>Reduce hiring time</li>
+            <li>Access top-tier technology talent</li>
+            <li>Improve workforce scalability</li>
+            <li>Lower recruitment overhead</li>
+            <li>Fill niche technology roles</li>
+          </ul>
+        </div>
+        <div class="why-card">
+          <h3>For Candidates</h3>
+          <ul>
+            <li>Access exclusive job opportunities</li>
+            <li>Receive career guidance and interview preparation</li>
+            <li>Find long-term career growth support</li>
+            <li>Explore competitive compensation opportunities</li>
+            <li>Discover flexible work options</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Testimonials</div>
+          <h2>What clients say about us.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="quote-card">
+            <p>D2 Technologies consistently delivered highly skilled professionals for our critical technology projects. Their responsiveness and quality of candidates exceeded expectations.</p>
+            <strong>Director of Technology, Financial Services Company</strong>
+          </div>
+          <div class="quote-card">
+            <p>The recruiting team understood our hiring needs quickly and helped us fill difficult positions within tight timelines.</p>
+            <strong>HR Manager, Healthcare Organization</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Contact Us</div>
+          <h2>Let’s build your team.</h2>
+          <p>Whether you are hiring technology professionals or searching for your next opportunity, D2 Technologies is here to help.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>D2 Technologies</h3>
+            <p>Reliable IT staffing and recruitment solutions for businesses.</p>
+            <div class="info-list">
+              <div class="info-item"><span>📍</span><div>Wesley Chapel, Florida, USA</div></div>
+              <div class="info-item"><span>✉️</span><div><a href="mailto:careers@d2technologies.com">careers@d2technologies.com</a></div></div>
+              <div class="info-item"><span>🌐</span><div><a href="https://www.d2technologies.com">www.d2technologies.com</a></div></div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Send an Inquiry</h3>
+            <form id="contactForm" action="mailto:careers@d2technologies.com" method="post" enctype="multipart/form-data">
+              <div class="form-row">
+                <div>
+                  <label for="name">Full Name</label>
+                  <input id="name" name="Full Name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div>
+                  <label for="phone">Phone Number</label>
+                  <input id="phone" name="Phone Number" type="tel" placeholder="Enter your phone number">
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label for="email">Email Address</label>
+                  <input id="email" name="Email Address" type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="file-upload-box">
+                  <label for="resume">Upload Your Resume</label>
+                  <input id="resume" name="Resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                  <span class="file-help">Accepted formats: PDF, DOC, or DOCX.</span>
+                </div>
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" placeholder="Tell us about your hiring needs or career goals..." required></textarea>
+              </div>
+              <button class="submit-btn" type="submit">Submit Inquiry →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-logo-wrap" href="#home" aria-label="D2 Technologies home">
+            <img class="footer-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgODAwIDI0NC4zOSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC4yNWVtOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIHN0cm9rZS13aWR0aDogMS4ycHg7CiAgICAgIH0KCiAgICAgIC5jbHMtMiwgLmNscy0zIHsKICAgICAgICBmaWxsOiBub25lOwogICAgICAgIHN0cm9rZTogI2Q4ZTRmMDsKICAgICAgfQoKICAgICAgLmNscy00IHsKICAgICAgICBsZXR0ZXItc3BhY2luZzogMGVtOwogICAgICB9CgogICAgICAuY2xzLTUgewogICAgICAgIGxldHRlci1zcGFjaW5nOiAuMjdlbTsKICAgICAgfQoKICAgICAgLmNscy02IHsKICAgICAgICBmaWxsOiAjMGQyMDQwOwogICAgICAgIGZvbnQtZmFtaWx5OiBBcmlhbC1Cb2xkTVQsIEFyaWFsOwogICAgICAgIGZvbnQtc2l6ZTogNDhweDsKICAgICAgICBmb250LXdlaWdodDogNzAwOwogICAgICB9CgogICAgICAuY2xzLTYsIC5jbHMtNywgLmNscy04LCAuY2xzLTkgewogICAgICAgIGlzb2xhdGlvbjogaXNvbGF0ZTsKICAgICAgfQoKICAgICAgLmNscy0xMCB7CiAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC4xNmVtOwogICAgICB9CgogICAgICAuY2xzLTExLCAuY2xzLTcgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KCiAgICAgIC5jbHMtMTIgewogICAgICAgIGxldHRlci1zcGFjaW5nOiAtLjA4ZW07CiAgICAgIH0KCiAgICAgIC5jbHMtNyB7CiAgICAgICAgZm9udC1mYW1pbHk6IEFyaWFsLUJsYWNrLCBBcmlhbDsKICAgICAgICBmb250LXNpemU6IDU4cHg7CiAgICAgICAgZm9udC13ZWlnaHQ6IDgwMDsKICAgICAgfQoKICAgICAgLmNscy0zIHsKICAgICAgICBzdHJva2Utd2lkdGg6IC44cHg7CiAgICAgIH0KCiAgICAgIC5jbHMtOCB7CiAgICAgICAgZmlsbDogIzhhYTBjMDsKICAgICAgICBmb250LWZhbWlseTogQXJpYWxNVCwgQXJpYWw7CiAgICAgICAgZm9udC1zaXplOiAxNXB4OwogICAgICB9CgogICAgICAuY2xzLTkgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50LTIpOwogICAgICAgIG9wYWNpdHk6IC45NTsKICAgICAgfQoKICAgICAgLmNscy0xMyB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSItNDU2LjUiIHkxPSI2NjAuMDQiIHgyPSItNDU1LjUiIHkyPSI2NTkuMDQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjc2NDEuODMgOTc3MTguODEpIHNjYWxlKDE0OCAtMTQ4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0MmE1ZjUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTU2NWMwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQtMiIgeDE9Ii00NTUuMDQiIHkxPSI2NjAuNzYiIHgyPSItNDU0LjA0IiB5Mj0iNjU5Ljc2IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKC04NDMzMS40NCA1ODMwNi45MSkgcm90YXRlKDkwKSBzY2FsZSgxMjggLTEyOCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkNTRmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y1N2YxNyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xMSIgd2lkdGg9IjgwMCIgaGVpZ2h0PSIyNDQuMzkiLz4KICA8cmVjdCBjbGFzcz0iY2xzLTEzIiB4PSI4MCIgeT0iMzIuMTkiIHdpZHRoPSIxNDgiIGhlaWdodD0iMTQ4IiByeD0iMjgiIHJ5PSIyOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4LjcxIDM0LjM0KSByb3RhdGUoLTEyKSIvPgogIDxyZWN0IGNsYXNzPSJjbHMtOSIgeD0iMTE4IiB5PSI2Mi4xOSIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyMiIgcnk9IjIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMS43IDI4OC44Nikgcm90YXRlKC04MikiLz4KICA8dGV4dCBjbGFzcz0iY2xzLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMiAxNDYuMTkpIj48dHNwYW4geD0iMCIgeT0iMCI+RDI8L3RzcGFuPjwvdGV4dD4KICA8bGluZSBjbGFzcz0iY2xzLTIiIHgxPSIzMTAiIHkxPSI1Mi4xOSIgeDI9IjMxMCIgeTI9IjE5Mi4xOSIvPgogIDx0ZXh0IGNsYXNzPSJjbHMtNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzM4IDEzNC4xOSkiPjx0c3BhbiBjbGFzcz0iY2xzLTQiIHg9IjAiIHk9IjAiPkQyIDwvdHNwYW4+PHRzcGFuIGNsYXNzPSJjbHMtMTIiIHg9IjczLjI2IiB5PSIwIj5UPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy00IiB4PSI5OC41MyIgeT0iMCI+ZWNobm9sb2dpZXM8L3RzcGFuPjwvdGV4dD4KICA8bGluZSBjbGFzcz0iY2xzLTMiIHgxPSIzMzgiIHkxPSIxNTIuMTkiIHgyPSI3NjAiIHkyPSIxNTIuMTkiLz4KICA8dGV4dCBjbGFzcz0iY2xzLTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMzOCAxNzcuMTkpIj48dHNwYW4gY2xhc3M9ImNscy01IiB4PSIwIiB5PSIwIj5QZW9wbGUgwrc8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTEiIHg9Ijg3Ljc5IiB5PSIwIj4gPC90c3Bhbj48dHNwYW4gY2xhc3M9ImNscy0xMCIgeD0iOTUuNjgiIHk9IjAiPlQ8L3RzcGFuPjx0c3BhbiBjbGFzcz0iY2xzLTUiIHg9IjEwNy4xNyIgeT0iMCI+ZWNobm9sb2d5IMK3IENvbnN1bHRpbmc8L3RzcGFuPjwvdGV4dD4KPC9zdmc+" alt="D2 Technologies logo">
+          </a>
+          <p>Building high-performing teams through trusted IT staffing and recruitment solutions.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h4>Call To Action</h4>
+          <div class="footer-links">
+            <a href="#contact">Request Talent</a>
+            <a href="#contact">Submit Resume</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 D2 Technologies. All Rights Reserved.</div>
+        <div>Services | Privacy Policy | Terms & Conditions | Contact Us</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>
